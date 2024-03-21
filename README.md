@@ -49,7 +49,7 @@ git add .
 git add <file_name>
 ```
 
-**Note:To ignore file or folder from git, we can add the file/folder names in .gitignore file**
+> Note: To ignore file or folder from git, we can add the file/folder names in .gitignore file
 
 **To check all the version maintained by git**
 ```
@@ -64,4 +64,9 @@ git commit -m "<message>"
 **To push all the changes to github**
 ```
 git push origin -u main
+```
+
+**To check the remote 'origin' URL**
+```
+git remote -v
 ```
