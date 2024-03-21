@@ -8,7 +8,7 @@
 4. [GIT CLI](https://git-scm.com/downloads)
 5. [Anaconda](https://www.anaconda.com/download)
 
-#### Install Anaconda
+**Install Anaconda**
 Download the .exe file from the link and install it.
 
 If the default direcory is selected for installation, add the following PATHs to the environment variable:
