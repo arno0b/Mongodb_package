@@ -20,10 +20,48 @@ C:/<base_install_location>\anaconda3\Library\mingw-w64\bin
 C:/<base_install_location>\anaconda3
 ```
 
-Creating a conda environment
+**Creating a conda environment**
 ```
 conda create -p venv python==3.7 -y
 ```
 ```
 conda activate venv/
+```
+
+**Install dependency and packages using requirements file:**
+```
+pip install -r requirements.txt
+```
+
+**To check for the state of the working directory and the staging area:**
+```
+git status
+```
+
+**To add the untracked files and unstaged file to the staging area:**
+
+1. For all the files in the directory:
+```
+git add .
+```
+2. For specific files:
+```
+git add <file_name>
+```
+
+**Note:To ignore file or folder from git, we can add the file/folder names in .gitignore file**
+
+**To check all the version maintained by git**
+```
+git log
+```
+
+**To create version/commit all changes by git**
+```
+git commit -m "<message>"
+```
+
+**To push all the changes to github**
+```
+git push origin -u main
 ```
