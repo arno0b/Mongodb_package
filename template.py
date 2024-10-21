@@ -2,22 +2,17 @@ import os
 from pathlib import Path
 import logging
 
+package= "mongodb_connect"
 files=[
     ".github/workflows/.gitkeep",
     "src/__init__.py",
-    "src/components/__init__.py",   #component of the pipeline
-    "src/components/data_ingestion.py",
-    "src/components/data_transformation.py",
-    "src/components/model_train.py",
-    "src/components/model_evaluation.py",
-    "src/pipeline/__init__.py",
-    "src/pipeline/training_pipeline.py",
-    "src/pipeline/prediction_pipeline.py",
-    "src/logger/logging.py",
-    "src/exception/exception.py",
+    f"src/{package}/__init__.py",   #component of the pipeline
+    f"src/{package}/mongo_crud.py",
     "src/utils/utils.py",
-    "tests/unit/__init__.py",   #testing each units
+    "tests/unit/__init__.py",
+    "tests/unit/unit.py",   #testing each units
     "tests/integration/__init__.py",    #testing all units
+    "tests/integration/int.py", 
     "init_setup.sh",
     "requirements.txt",
     "requirements_dev.txt",
